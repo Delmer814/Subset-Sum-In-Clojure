@@ -1,0 +1,11 @@
+(ns subsetSum.core)
+
+(def del "hello")
+
+(defn hello [x] (str "Hello, " x))
+
+(defn chooseTwo [x]
+  (conj
+   (conj () (rest x)) (first x)))
+
+(defn rotate [x] (conj (rest) (first x)))
